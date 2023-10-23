@@ -1,34 +1,29 @@
-# MyTodoApp
-
-## Descrição
-MyTodoApp é um aplicativo de lista de tarefas simples construído com o framework Django no backend e Angular com Bootstrap no frontend. Ele permite aos usuários criar, atualizar, marcar como concluídas e excluir tarefas. Este é um projeto de exemplo projetado para fins de aprendizado e demonstração.
-
+MyTodoApp: Uma Lista de Tarefas Elegante e Eficiente
+📌 Descrição
+MyTodoApp é uma aplicação de gestão de tarefas desenvolvida com a robustez do Django no backend e a combinação dinâmica de Angular e Bootstrap no frontend. Projetado para ser um guia para entusiastas e desenvolvedores, este projeto exemplifica as melhores práticas em desenvolvimento web moderno.
 
 
-## Recursos
-- [x] Adicionar uma nova tarefa.
-- [x] Atualizar o título e a descrição de uma tarefa existente.
-- [x] Marcar uma tarefa como concluída.
-- [x] Excluir uma tarefa.
-
-## Tecnologias Utilizadas
-- Backend: Django
-- Frontend: Angular, Bootstrap
-
-## Pré-requisitos
-- Angular,TypeScript (para o frontend)
-- Python, Django (para o backend)
-
-## Configuração
-1. Clone o repositório.
-2. Navegue até o diretório do projeto.
-3. Execute `npm install` para instalar as dependências do frontend.
-4. Execute `python manage.py migrate` para configurar o banco de dados.
-5. Execute `python manage.py runserver` para iniciar o servidor Django.
-6. Execute `npm start` para iniciar o aplicativo Angular.
-
-## Uso
-1. Abra o aplicativo em seu navegador.
-2. Comece a adicionar suas tarefas.
-3. Marque as tarefas como concluídas à medida que você as finaliza.
-4. Atualize ou exclua tarefas conforme necessário.
+🌟 Recursos
+📝 Adicionar Tarefas: Crie tarefas com facilidade e organização.
+🛠 Editar Tarefas: Atualize títulos e descrições conforme suas necessidades.
+✅ Marcar como Concluída: Tenha a satisfação de concluir suas tarefas com um simples clique.
+🗑 Excluir Tarefas: Mantenha sua lista limpa removendo tarefas desnecessárias.
+🛠 Tecnologias Utilizadas
+Backend: Django (utilizando SQLite como banco de dados)
+Frontend: Angular (com NG Modules) & Bootstrap
+Linguagem: TypeScript
+📚 Pré-requisitos
+Angular & TypeScript (para o frontend)
+Python & Django (para o backend)
+🚀 Configuração
+📦 Clone o repositório.
+🗂 Navegue até o diretório do projeto.
+🌐 Execute npm install para instalar as dependências do frontend.
+🛢 Execute python manage.py migrate para configurar o banco de dados SQLite.
+🌍 Execute python manage.py runserver para iniciar o servidor Django.
+⚙ Execute npm start para iniciar o aplicativo Angular.
+🖥 Uso
+🌐 Abra o aplicativo em seu navegador.
+✍ Comece adicionando suas tarefas.
+☑ Marque as tarefas como concluídas à medida que você as finaliza.
+🛠 Atualize ou 🗑 exclua tarefas conforme necessário.
