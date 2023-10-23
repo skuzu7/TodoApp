@@ -1,0 +1,73 @@
+<div class="container mt-4">
+  <h2 class="mb-4">Task List</h2>
+
+  <!-- Input Group for Search -->
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+    </div>
+    <input [(ngModel)]="searchQuery" (keyup)="filterTasks()" class="form-control" placeholder="Search for tasks..." aria-label="Search" aria-describedby="basic-addon1">
+  </div>
+  <div class="btn-group" role="group">
+    <button class="btn btn-secondary" (click)="sortTasks('category')">
+      Ordenar por Categoria
+      <i class="fa fa-sort"></i>
+    </button>
+    <button class="btn btn-secondary" (click)="sortTasks('name')">
+      Ordenar por Nome
+      <i class="fa fa-sort"></i>
+    </button>
+  </div>
+
+  <!-- Task List -->
+  <table class="table table-bordered table-hover table-dark">
+    <thead class="thead-light">
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Descrição</th>
+        <th>Categoria</th>
+        <th>Completa</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks">
+        <!-- ID -->
+        <td>
+          <div class="ms-3">
+            <p class="fw-bold mb-1">{{ task.id }}</p>
+          </div>
+        </td>
+        <!-- Título -->
+        <td>
+          <p class="fw-bold mb-1">{{ task.title }}</p>
+        </td>
+
+        <!-- Descrição -->
+        <td>{{ task.description }}</td>
+
+        <!-- Categoria -->
+
+        <td>{{ task.category }}</td>
+
+        <!-- Completa -->
+        <td>
+          <i *ngIf="task.completed" class="fa fa-check-circle text-success" title="Completa"></i>
+          <i *ngIf="!task.completed" class="fa fa-times-circle text-danger" title="Não Completa"></i>
+        </td>
+
+        <!-- Ações -->
+        <td>
+          <button type="button" class="btn btn-link btn-sm fw-bold" data-mdb-ripple-color="dark"  (click)="editTask(task.id!)">
+            <i class="fa fa-edit"></i> Editar
+          </button>
+          <button type="button" class="btn btn-danger btn-sm" (click)="deleteTask(task.id!)">
+            <i class="fa fa-trash"></i> Excluir
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-task-edit-modal></app-task-edit-modal>

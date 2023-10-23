@@ -1,0 +1,20 @@
+<!-- app.component.html -->
+<main>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/tasks" routerLinkActive="active">Lista de Tarefas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/add-task" routerLinkActive="active">Adicionar Tarefa</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</main>
