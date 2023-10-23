@@ -4,9 +4,6 @@
 
 **MyTodoApp** é uma aplicação de gestão de tarefas desenvolvida com a robustez do Django no backend e a combinação dinâmica de Angular e Bootstrap no frontend. Projetado para ser um guia para entusiastas e desenvolvedores, este projeto exemplifica as melhores práticas em desenvolvimento web moderno.
 
-## 💻 Capturas de Tela
-
-*Inserir capturas de tela aqui*
 
 ## 🌟 Recursos
 
@@ -30,7 +27,7 @@
 
 ```bash
 # Clone o repositório
-git clone [link_do_repositório]
+https://github.com/skuzu7/TodoApp.git
 
 # Navegue até o diretório do projeto
 cd MyTodoApp
