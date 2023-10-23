@@ -1,4 +1,4 @@
-MyTodoApp: Uma Lista de Tarefas Elegante e Eficiente
+
 📌 Descrição
 MyTodoApp é uma aplicação de gestão de tarefas desenvolvida com a robustez do Django no backend e a combinação dinâmica de Angular e Bootstrap no frontend. Projetado para ser um guia para entusiastas e desenvolvedores, este projeto exemplifica as melhores práticas em desenvolvimento web moderno.
 
