@@ -3,8 +3,7 @@
 ## Descrição
 MyTodoApp é um aplicativo de lista de tarefas simples construído com o framework Django no backend e Angular com Bootstrap no frontend. Ele permite aos usuários criar, atualizar, marcar como concluídas e excluir tarefas. Este é um projeto de exemplo projetado para fins de aprendizado e demonstração.
 
-## Capturas de Tela
-[Inserir capturas de tela aqui]
+
 
 ## Recursos
 - [x] Adicionar uma nova tarefa.
