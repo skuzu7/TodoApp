@@ -2,6 +2,8 @@ MyTodoApp: Uma Lista de Tarefas Elegante e Eficiente
 📌 Descrição
 MyTodoApp é uma aplicação de gestão de tarefas desenvolvida com a robustez do Django no backend e a combinação dinâmica de Angular e Bootstrap no frontend. Projetado para ser um guia para entusiastas e desenvolvedores, este projeto exemplifica as melhores práticas em desenvolvimento web moderno.
 
+💻 Capturas de Tela
+Inserir capturas de tela aqui
 
 🌟 Recursos
 📝 Adicionar Tarefas: Crie tarefas com facilidade e organização.
@@ -16,14 +18,27 @@ Linguagem: TypeScript
 Angular & TypeScript (para o frontend)
 Python & Django (para o backend)
 🚀 Configuração
-📦 Clone o repositório.
-🗂 Navegue até o diretório do projeto.
-🌐 Execute npm install para instalar as dependências do frontend.
-🛢 Execute python manage.py migrate para configurar o banco de dados SQLite.
-🌍 Execute python manage.py runserver para iniciar o servidor Django.
-⚙ Execute npm start para iniciar o aplicativo Angular.
+bash
+Copy code
+# Clone o repositório
+git clone [link_do_repositório]
+
+# Navegue até o diretório do projeto
+cd MyTodoApp
+
+# Instale as dependências do frontend
+npm install
+
+# Configure o banco de dados SQLite
+python manage.py migrate
+
+# Inicie o servidor Django
+python manage.py runserver
+
+# Inicie o aplicativo Angular
+npm start
 🖥 Uso
-🌐 Abra o aplicativo em seu navegador.
-✍ Comece adicionando suas tarefas.
-☑ Marque as tarefas como concluídas à medida que você as finaliza.
-🛠 Atualize ou 🗑 exclua tarefas conforme necessário.
+Abra o aplicativo em seu navegador.
+Comece adicionando suas tarefas.
+Marque as tarefas como concluídas à medida que você as finaliza.
+Atualize ou exclua tarefas conforme necessário.
