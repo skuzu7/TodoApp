@@ -2,7 +2,7 @@
 
 ## 📌 Descrição
 
-**MyTodoApp** é uma aplicação de gestão de tarefas desenvolvida com a robustez do Django no backend e a combinação dinâmica de Angular e Bootstrap no frontend. Projetado para ser um guia para entusiastas e desenvolvedores, este projeto exemplifica as melhores práticas em desenvolvimento web moderno.
+**MyTodoApp** é uma aplicação de gestão de tarefas desenvolvida com  Django no backend e Angular e Bootstrap no frontend. para fins de estudo
 
 
 ## 🌟 Recursos
@@ -16,7 +16,7 @@
 
 - **Backend**: Django (utilizando SQLite como banco de dados)
 - **Frontend**: Angular (com NG Modules) & Bootstrap
-- **Linguagem**: TypeScript
+- **Linguagem**: TypeScript e Python
 
 ## 📚 Pré-requisitos
 
