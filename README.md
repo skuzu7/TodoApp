@@ -23,23 +23,42 @@
 - Angular & TypeScript (para o frontend)
 - Python & Django (para o backend)
 
+Entendi! Vou formatar cada comando separadamente em Markdown para que você possa copiá-los individualmente:
+
+---
+
 ## 🚀 Configuração
 
+### Clone o repositório
 ```bash
-# Clone o repositório
-https://github.com/skuzu7/TodoApp.git
+git clone https://github.com/skuzu7/TodoApp.git
+```
 
-# Navegue até o diretório do projeto
+### Navegue até o diretório do projeto
+```bash
 cd MyTodoApp
+```
 
-# Instale as dependências do frontend
+### Instale as dependências do frontend
+```bash
 npm install
+```
 
-# Configure o banco de dados SQLite
+### Configure o banco de dados SQLite
+```bash
 python manage.py migrate
+```
 
-# Inicie o servidor Django
+### Inicie o servidor Django
+```bash
 python manage.py runserver
+```
 
-# Inicie o aplicativo Angular
+### Inicie o aplicativo Angular
+```bash
 npm start
+```
+
+---
+
+Desta forma, cada comando está separado e pode ser copiado individualmente.
