@@ -23,7 +23,7 @@
 - Angular & TypeScript (para o frontend)
 - Python & Django (para o backend)
 
-Entendi! Vou formatar cada comando separadamente em Markdown para que você possa copiá-los individualmente:
+
 
 ---
 
@@ -61,4 +61,4 @@ npm start
 
 ---
 
-Desta forma, cada comando está separado e pode ser copiado individualmente.
+
