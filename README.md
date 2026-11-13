@@ -32,32 +32,47 @@
 ### Clone o repositório
 ```bash
 git clone https://github.com/skuzu7/TodoApp.git
+cd TodoApp
 ```
 
-### Navegue até o diretório do projeto
+### Backend (Django)
 ```bash
-cd MyTodoApp
-```
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+python -m pip install -r requirements.txt
 
-### Instale as dependências do frontend
-```bash
-npm install
-```
-
-### Configure o banco de dados SQLite
-```bash
+export DJANGO_DEBUG=1            # Windows (PowerShell): $env:DJANGO_DEBUG = "1"
 python manage.py migrate
-```
-
-### Inicie o servidor Django
-```bash
 python manage.py runserver
 ```
 
-### Inicie o aplicativo Angular
+### Frontend (Angular)
 ```bash
+cd MyTodoAppFrontend
+npm install
 npm start
 ```
+
+### Testes
+```bash
+DJANGO_SECRET_KEY=apenas-para-teste python manage.py test
+```
+
+## 🔒 Configuração e segurança
+
+A configuração vem de variáveis de ambiente e falha fechada: sem `DJANGO_SECRET_KEY`
+e sem `DJANGO_DEBUG=1`, a aplicação não inicia.
+
+| Variável | Padrão | Função |
+| --- | --- | --- |
+| `DJANGO_DEBUG` | desligado | `1` ativa o modo de desenvolvimento e gera uma chave descartável por processo |
+| `DJANGO_SECRET_KEY` | — (obrigatória fora do modo debug) | Chave secreta do Django; nunca vai para o repositório |
+| `DJANGO_ALLOWED_HOSTS` | `localhost,127.0.0.1` | Hosts aceitos, separados por vírgula |
+| `DJANGO_CORS_ALLOWED_ORIGINS` | `http://localhost:4200` | Origens de navegador que podem chamar a API |
+
+- O banco local (`db.sqlite3`) e os arquivos `__pycache__` não são mais versionados; `migrate` recria o banco.
+- A chave gerada pelo `startproject` que existia em versões antigas do `settings.py` foi aposentada e não é usada em lugar nenhum. Ela continua visível no histórico do Git, então nunca a reutilize.
+- A API é um projeto de estudo e não tem autenticação. Antes de qualquer publicação, adicione autenticação e rode `python manage.py check --deploy`.
 
 ---
 
